@@ -12,7 +12,8 @@ export class StudentsComponent implements OnInit {
   ngOnInit(): void {
     this.studentServiice.getStudent().subscribe(
       (successResponse) => {
-        console.log(successResponse);
+        console.log(successResponse[0].firstName);
+        console.log(successResponse[0].lastName);
       },
       (errorResponse) => {
         console.log(errorResponse);
