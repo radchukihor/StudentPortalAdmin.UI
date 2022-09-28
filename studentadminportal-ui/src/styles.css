@@ -3,9 +3,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .page-header{
-background: gray;
+  background: rgb(1,0,14);
+  background: linear-gradient(90deg, rgba(1,0,14,1) 0%, rgba(0,155,255,1) 42%, rgba(244,237,6,1) 100%);
 }
 .page-header h1{
+  color: white;
   padding: 0 22px;
   margin:  0;
 }
