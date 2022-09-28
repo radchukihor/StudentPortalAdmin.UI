@@ -1,3 +1,20 @@
-table{
+table {
   width: 100%;
+}
+.search-input {
+  color:white;
+  outline: none;
+  padding: 8px 10px;
+  margin-left: 20px;
+  border-radius: 3px;
+  border: 1px solid ;
+  background: rgb(1,0,14);
+  background: linear-gradient(90deg, rgba(1,0,14,1) 0%, rgba(0,155,255,1) 42%, rgba(244,237,6,1) 100%);
+
+}
+.search-input:active {
+  border: 1px solid red;
+}
+.search-input:focus {
+  border: 1px solid red;
 }

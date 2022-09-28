@@ -24,6 +24,7 @@ export class StudentsComponent implements OnInit {
   dataSource: MatTableDataSource<Student> = new MatTableDataSource();
   @ViewChild(MatPaginator) matPaginator!: MatPaginator;
   @ViewChild(MatSort) matSort!: MatSort;
+  filterString = "";
   constructor(private studentServiice: StudentService) {}
 
   ngOnInit(): void {
@@ -44,5 +45,8 @@ export class StudentsComponent implements OnInit {
         console.log(errorResponse);
       }
     );
+  }
+  filterStudents(){
+    this.dataSource.filter = this.filterString.trim().toLowerCase();
   }
 }
